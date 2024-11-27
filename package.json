@@ -7,19 +7,32 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/auth-dbauth-setup": "6.3.1",
-    "@redwoodjs/core": "6.3.1"
+    "@redwoodjs/core": "8.4.1",
+    "@redwoodjs/project-config": "8.4.1",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "jest-mock-extended": "^4.0.0-beta1",
+    "ts-jest": "^29.2.5"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
     "root": true
   },
   "engines": {
-    "node": "=18.x",
-    "yarn": ">=1.15"
+    "node": "=20.x"
   },
   "prisma": {
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@4.4.0",
+  "resolutions": {
+    "@storybook/react-dom-shim@npm:7.6.17": "https://verdaccio.tobbe.dev/@storybook/react-dom-shim/-/react-dom-shim-8.0.8.tgz"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "puppeteer": "^23.9.0",
+    "puppeteer-cluster": "^0.24.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
 }
