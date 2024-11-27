@@ -1,19 +1,18 @@
-# Redwood Tutorial App
+[Demo link](https://redwood-scraper-demo.netlify.app/articles)
 
-This repo represents the final state of the app created during the [Redwood Tutorial](https://redwoodjs.com/tutorial).
-It is meant to be a starting point for those working on the second half of the Tutorial, starting at the [Intermission](https://redwoodjs.com/docs/tutorial/intermission).
+Due to time constraints, only the key parts of the Questions section were implemented:
 
-This repo contains much more styling than the one we built together in the tutorial, but is functionally identical.
+1. Implemented scraping of the Coinbase Blog.
+2. Handled Coinbase anti-scraping measures using `Puppeteer: stealth plugin`.
+3. Deployed via `GitHub` and `Netlify`.
 
-## Setup
+**Scraping Method**:
+1. First, find a way to load more blog data. Here, a simple implementation was chosen by finding the `Show more` button and clicking it.
+2. After clicking enough times, collect the blog links.
+3. Scrape the blog content based on the links obtained in step 2.
+4. For details, refer to the code in `./api/scraper/CoinbaseScraper.ts`.
 
-The [tutorial itself](https://redwoodjs.com/docs/tutorial/chapter1/prerequisites) contains instructions for getting this repo up and running, but here is a summary of the commands:
 
-```bash
-git clone https://github.com/redwoodjs/redwood-tutorial
-cd redwood-tutorial
-yarn install
-yarn rw prisma migrate dev
-yarn rw prisma db seed
-yarn rw dev
-```
+**Areas for Improvement**:
+1. For the scraper, find a more stable and efficient way to perform continuous and scheduled scraping; add multiple blog website data sources.
+2. For the Redwood frontend data presentation, enhance the styling by using a component library.

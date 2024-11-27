@@ -8,5 +8,5 @@ functions = "api/dist/functions"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/articles"
   status = 200
