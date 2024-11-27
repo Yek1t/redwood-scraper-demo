@@ -912,6 +912,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-syntax-import-assertions@npm:^7.20.0":
+  version: 7.26.0
+  resolution: "@babel/plugin-syntax-import-assertions@npm:7.26.0"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.25.9
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 525b174e60b210d96c1744c1575fc2ddedcc43a479cba64a5344cf77bd0541754fc58120b5a11ff832ba098437bb05aa80900d1f49bb3d888c5e349a4a3a356e
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-syntax-import-assertions@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/plugin-syntax-import-assertions@npm:7.22.5"
@@ -3829,6 +3840,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@graphql-tools/graphql-tag-pluck@npm:^8.3.5":
+  version: 8.3.5
+  resolution: "@graphql-tools/graphql-tag-pluck@npm:8.3.5"
+  dependencies:
+    "@babel/core": ^7.22.9
+    "@babel/parser": ^7.16.8
+    "@babel/plugin-syntax-import-assertions": ^7.20.0
+    "@babel/traverse": ^7.16.8
+    "@babel/types": ^7.16.8
+    "@graphql-tools/utils": ^10.6.0
+    tslib: ^2.4.0
+  peerDependencies:
+    graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: a73889abcf7b8d7217dbe88ddabe8fbe82e91d2e6d7db4db2b32c0bf66c96f36a9322ff3e3d63f3bf1938d3295950270fec96a1a8f640085626005deea58bcd7
+  languageName: node
+  linkType: hard
+
 "@graphql-tools/import@npm:6.7.6":
   version: 6.7.6
   resolution: "@graphql-tools/import@npm:6.7.6"
@@ -5433,6 +5461,25 @@ __metadata:
     graphql: 16.9.0
     typescript: 5.6.2
   checksum: e8fda3172668b31fa15bf3ac5facf8b14f1e6b37f05990730d5311b38bb19cf21bdbb94d18f4888f5f88b3363aebd91ba3302480a1583ad0d7a93cb2b8367f0b
+  languageName: node
+  linkType: hard
+
+"@redwoodjs/cli-data-migrate@npm:^8.4.1":
+  version: 8.4.1
+  resolution: "@redwoodjs/cli-data-migrate@npm:8.4.1"
+  dependencies:
+    "@redwoodjs/babel-config": 8.4.1
+    "@redwoodjs/project-config": 8.4.1
+    chalk: 4.1.2
+    dotenv-defaults: 5.0.2
+    execa: 5.1.1
+    fs-extra: 11.2.0
+    listr2: 6.6.1
+    terminal-link: 2.1.1
+    yargs: 17.7.2
+  bin:
+    up: ./dist/bin.js
+  checksum: 35a5c253d236713e1ece13d0dbd0dd6ebfdb82c66ab77fd3d89bca5b7d20fbd947b0523941a032932e90a995e2e422f29c3c29c5fa8e84fc5b47d9e223543a55
   languageName: node
   linkType: hard
 
@@ -17380,6 +17427,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
+    "@graphql-tools/graphql-tag-pluck": ^8.3.5
+    "@redwoodjs/cli-data-migrate": ^8.4.1
     "@redwoodjs/core": 8.4.1
     "@redwoodjs/project-config": 8.4.1
     "@types/jest": ^29.5.14
